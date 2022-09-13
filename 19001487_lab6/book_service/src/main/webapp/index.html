@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book client</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="book.js"></script>
+    </head>
+
+    <h2>Books Client</h2>
+ 	Book Id : <br/>
+	<input type="text" id="id" /> 
+	<button onclick="getDetails()">Details </button>
+	<p />
+        <div id="title"></div>
+	<p />
+        <div id="price"></div>
+
+    <h3>Add book</h3>
+    <form action="/book_service/rest/books" method="post" >
+        id:  <br> <input name="id" type="number"/> <br>
+        title:  <br> <input name="title" type="text"/> <br>
+        price:  <br> <input name="price" type="number"/> <br>
+        <button type="submit">Submit</button> <br>
+    </form>
+
+    <h3>Delete book</h3>
+    Book id to delete <br>
+    <input type="text" id="delBookId" />
+    <button onclick="deleteBookFun()">Delete</button>
+    <p id="delStatus"></p>
+</html>
