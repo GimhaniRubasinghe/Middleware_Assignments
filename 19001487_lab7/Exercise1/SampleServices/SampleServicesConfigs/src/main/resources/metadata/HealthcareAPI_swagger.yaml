@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: HealthcareAPI
+  description: API Definition of HealthcareAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/healthcare
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response
